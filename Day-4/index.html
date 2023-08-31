@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>HTML Graphics</legend>
+        <div style="display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap;">
+            <div>
+                <h3>Line</h3>
+                <svg height="150" width="500">
+                    <line x1="10" y1="10" x2="400" y2="400" style="stroke: rgb(0,0,255);stroke-width: 3;" />
+                </svg>
+            </div>
+            <div>
+                <h3>Circle</h3>
+                <svg width="200" height="200">
+                    <circle cx="80" cy="80" r="50" stroke="black" stroke-width="2" fill="cyan" />
+
+                </svg>
+            </div>
+            <div>
+                <h3>Rectangle</h3>
+                <svg width="400" height="100">
+                    <rect width="400" height="100" style="fill: rgb(255,225,255);
+                stroke-width: 5;
+                stroke: rgb(0,0,0);" />
+                    <text x="150" y="50">sdjhacscqe</text>
+                </svg>
+            </div>
+
+            <div>
+                <h3>Square</h3>
+                <svg width="400" height="380">
+                    <rect x="80" y="20" rx="20" ry="20" width="150" height="150" style="fill: orange;
+                    stroke: black;
+                    stroke-width: 2;
+                    opacity: 0.5;" />
+                </svg>
+            </div>
+            <div>
+                <h3>Star</h3>
+                <svg width="300" height="200">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill: grey; stroke: red;
+                                     stroke-width: 5; fill-rule: evenodd" />
+                </svg>
+            </div>
+            <div>
+                <h3>Sphere</h3>
+                <svg height="300" width="700">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:white;
+                                         stop-opacity: 1" />
+                            <stop offset="100%" style="stop-color: rgb(0, 0, 255);
+                                         stop-opacity: 1" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="200" cy="100" rx="120" ry="80" fill="url(#grad1)" />
+                    <text fill="#ffffff" font-size="22" font-family="ARIAL" x="120" y="110">
+                        SamuelOnoh
+                    </text>
+                </svg>
+            </div>
+
+        </div>
+        <h3>Input Tags</h3>
+        <form>
+            <label>Name:</label>
+            <input type="text" name="name" value="">
+            <br><br>
+     
+            <label>E-mail:</label>
+            <input type="email" name="emailaddress">
+            <br><br>
+     
+            <label>Password: </label>
+            <input type="password" name="password">
+            <br><br>
+
+            Encrypted: <keygen name="secure">
+            <input type="submit">
+     
+        </form>
+    </fieldset>
+</body>
+
+</html>
