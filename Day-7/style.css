@@ -1,0 +1,8 @@
+h1:hover {
+    color: white;
+    background-color: rgba(0, 0, 255, 0.658);
+}
+
+h2:hover {
+    color: rgba(255, 0, 0, 0.5);
+}
