@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day 21</title>
+</head>
+
+<body>
+    Basic Javascript
+
+    <!-- <script>
+        console.log("Welcome to Day 21 Sammy!");
+    </script> -->
+
+    <h2>
+        Add Javascript code inside Head Section
+    </h2>
+
+    <h3 id="demo">
+        Hello Sammy!
+    </h3>
+
+    <button type="button" onclick="myfun()">
+        Click here
+    </button>
+
+    <!-- <h3>JavaScript Display Possibilities Using document.write()</h3>
+    <p id="SON"></p> -->
+    <!-- Script to use document.write() -->
+
+    <!-- <h3>JavaScript Dis[play Possibilities Using window.alert()</h3>
+    <p id="sammy"></p> -->
+    <!-- Script to use window.alert() -->
+
+    <h2>JavaScript Display Possibilities Using window.alert()</h2>
+    <p></p>
+    <script>
+        function myfun() {
+            document.getElementById("demo").innerHTML = "Sammy you are welcome";
+            document.getElementById("demo").style.color = 'green'
+        }
+
+        let a, b, c;
+        a = 2;
+        b = 3;
+        c = a + b;
+        console.log("The valueof c is " + c + ".")
+
+        function myFunction() {
+            console.log("Hello");
+            console.log("How are you?");
+        }
+        myFunction()
+
+        // Declare a variable and initialize it
+        // Global variable declaration
+        let Name = "Sammuel";
+
+        // Function definitioon
+        function mySecondFunction() {
+            // Local variable declaration
+            let num = 45;
+
+            // Display the the value of Global variable
+            console.log(Name);
+
+            // Display the value of local varfiable
+            console.log(num);
+        }
+        // Function call
+        mySecondFunction();
+
+        // Data Types 
+        // It stores string data type
+        // let txt = "100 days of coding";
+
+        // It stores interger data type
+        // let a = 5;
+        // let b = 5;
+
+        // it store Boolean data type
+        // (a == b );
+
+        // To check Strictly (i'e Whether the datatypes of both variables are same) === is used 
+        // (a === b) --> returns true to the console
+
+        // It stores array data type
+        let places = ["Cars", "Computer", "Hello"];
+
+        // It store object data (objects are represented in the below way mainly)
+        let student = {
+            firstName: "Samuel",
+            lastName: "Onoh",
+            age: 23,
+            mark: "blackHAIR"
+
+        };
+
+        // document.write(10 * 2);
+
+        // window.alert(10 + 100);
+
+        window.prompt("Please Enter your Input");
+
+        let petName = 'Rocky' // Global variable
+        myFunc()
+
+        function myFunc() {
+            fruit = 'apple'; // Considered global
+            console.log(typeof petName + ' - ' + 'My pet name is ' + petName)
+        }
+
+        console.log(
+            typeof petName + ' - ' + 'My pet name is ' + ', Friut name is ' + fruit
+        )
+
+        // {
+        //     let num = 10;
+        //     // calling the function inside block
+        //     console.log(num)
+        // }
+        // // calling the function outside block throws an Error
+        // console.log(num)
+
+        // Redeclaring variables in different block
+        let x = 77;
+        {
+            let x = 23;
+            // 23
+            console.log(x);
+        }
+        // 77
+        console.log(x)
+    </script>
+</body>
+
+</html>
