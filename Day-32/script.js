@@ -51,3 +51,5 @@ document.getElementById("methods").innerHTML =
     mp.forEach((values, keys) => {
         console.log(values, keys)
     })
+
+    
